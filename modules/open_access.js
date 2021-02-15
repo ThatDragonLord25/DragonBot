@@ -9,7 +9,7 @@ module.exports = {
     console.log(Object.keys(commands));
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setThumbnail('https://cdn.discordapp.com/avatars/616382822613123074/cd0439dc8177e697448e573f7b96aca8.png')
       .setTitle("Dragon Bot").setURL("https://github.com/ThatDragonLord25/DragonBot/")
       .setFooter("Author: Dragon \nCollaborators: sebmandal")
@@ -19,14 +19,14 @@ module.exports = {
   map: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setTitle("**RESULTS**").setURL(`https://www.google.com/maps/@${args[1]},${args[2]},2z`)
     )
   },
   status: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setTitle("**Server Info**")
       .setDescription("Server Name: " + msg.guild.name + "\n Members: " + msg.guild.memberCount + "\n" + msg.guild.owner.user.username)
     )
@@ -38,7 +38,7 @@ module.exports = {
   github: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setDescription(`https://github.com/${args[1]}/${args[2]}\n^your results^`
       )
     );
@@ -46,21 +46,21 @@ module.exports = {
   search: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor('#ff0000')
       .setDescription(`https://google.com/?q=${args[1]}\n^your results^`)
     );
   },
   url: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setDescription(`https://${args[1]}\n^your results^`)
     );
   },
   code: (msg, prefix, args) => {
     return msg.channel.send(
       new Discord.MessageEmbed()
-      .setColor("ff0000")
+      .setColor("#ff0000")
       .setDescription(`
       **_LANGUAGES_**
       [Javascript](https://nodejs.org/en/)
