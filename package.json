@@ -1,0 +1,17 @@
+{
+  "name": "dragon-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon index.js",
+    "start": "nodemon index.js"
+  },
+  "author": "DragonLord25",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "googleapis": "^67.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
