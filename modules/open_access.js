@@ -11,7 +11,7 @@ module.exports = {
       new Discord.MessageEmbed()
       .setColor("ff0000")
       .setThumbnail('https://cdn.discordapp.com/avatars/616382822613123074/cd0439dc8177e697448e573f7b96aca8.png')
-      .setTitle("Dragon Bot").setURL("https://github.com/ThatDragonLord25/DragonDiscordBot/")
+      .setTitle("Dragon Bot").setURL("https://github.com/ThatDragonLord25/DragonBot/")
       .setFooter("Author: Dragon \nCollaborators: sebmandal")
       .setDescription("**Commands**\n" + Object.keys(commands))
     )
