@@ -9,7 +9,7 @@ module.exports = {
       msg.guild.roles.create({ data: { name: 'mute', hoist: false, color: '#000'}});
       return msg.channel.send("Moderation Roles Created.  **WARNING** DO NOT RUN THIS COMMAND AGAIN UNLESS ALL MODERATION ROLES ARE DELETED");
     } else {
-      return msg.channel.send("insufficient permissions");
+      return msg.channel.send("insufficient permissions this requires Admin permissions");
     }
   },
 }
