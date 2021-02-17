@@ -15,7 +15,7 @@ client.on('message', msg => {
   const command = args[0]
   const commands = {
     ...require("./modules/open_access.js"),
-    ...require("./modules/moderation.js")
+    ...require("./modules/moderation.js"),
   };
   
   if (msg.content.startsWith(prefix)) {

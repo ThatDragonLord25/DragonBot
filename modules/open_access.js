@@ -76,5 +76,24 @@ module.exports = {
       [IntelliJ](https://www.jetbrains.com/idea/)
       [Pycharm](https://www.jetbrains.com/pycharm/)`)
     );
+  },
+  embed: (msg, prefix, args) => {
+    return msg.channel.send(
+      new Discord.MessageEmbed()
+      .setColor(`${args[1]}`)
+      .setTitle(`${args[2]}`)
+      .setAuthor(`${args[3]}`)
+      .setDescription(`${args[4]}`)
+      .setThumbnail(`${args[5]}`)
+      .setImage(`${args[6]}`)
+      .setFooter(`${args[7]}`)
+    )
+  },
+  embedHelp: (msg, prefix, args) => {
+    return msg.channel.send(
+      new Discord.MessageEmbed()
+      .setColor("#ff0000")
+      .setDescription ("1 = color \n 2 = Title \n 3 = Author \n 4 = Description \n 5 = Thumbnail \n 6 = Image \n 7 = Footer")
+    )
   }
 };
